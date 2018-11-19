@@ -1,4 +1,3 @@
-
 public interface IEncoder {
 	// Given the paths of an input file and an output file, the encoder 
 	// will read the message from the input file, encode the message 

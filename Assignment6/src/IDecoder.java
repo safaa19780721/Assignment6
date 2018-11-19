@@ -1,4 +1,3 @@
-
 public interface IDecoder {
 	// Given the file path of the binary file, the decoder will read the file, decode the message and 
 	// print it to the console.
