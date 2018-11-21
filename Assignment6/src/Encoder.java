@@ -17,6 +17,7 @@ public class Encoder implements IEncoder {
 			while (scanner.hasNextLine()) {
 				
 				input = input.concat(scanner.nextLine());
+				input = input.concat("\n");
 				
 			}
 
@@ -34,15 +35,12 @@ public class Encoder implements IEncoder {
 				
 				for (int j = 0; j < n; j++) {
 					
-					filerandom.writeByte(random.nextInt());
+					filerandom.writeByte(n);
 					
 				}
-				
+			}	
 			filerandom.writeChar(input.charAt(last));
 			filerandom.writeInt(-1);
-			
-			}
-			
 			filerandom.close();
 			scanner.close();
 
